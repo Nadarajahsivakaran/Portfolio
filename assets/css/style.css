@@ -530,6 +530,28 @@ ul { list-style: none; }
 }
 .edu-org { color: var(--text-muted); font-size: 0.9rem; }
 .edu-date { color: var(--text-muted); font-size: 0.82rem; margin-top: 4px; }
+.edu-details { margin-top: 14px; }
+.edu-details summary {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.edu-details summary::-webkit-details-marker { display: none; }
+.edu-details summary::before { content: "▸ "; }
+.edu-details[open] summary::before { content: "▾ "; }
+.edu-modules { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+.edu-modules li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+.edu-modules li span:last-child { color: var(--accent); font-weight: 700; }
 
 /* Contact */
 .contact-intro { color: var(--text-muted); max-width: 560px; margin-bottom: 36px; }

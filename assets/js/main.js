@@ -24,12 +24,11 @@ navLinks.querySelectorAll("a").forEach((link) => {
 
 // Typewriter effect
 const roles = [
-  "Backend Developer",
-  ".NET & ASP.NET Core Engineer",
   "Full Stack Developer",
+  ".NET & ASP.NET Core Engineer",
+  "AI / ML Engineer",
   "React & Next.js Developer",
   "Cloud & Microservices Engineer",
-  "AI / ML Engineer (in progress)",
 ];
 const typewriterEl = document.getElementById("typewriter-text");
 let roleIndex = 0;
